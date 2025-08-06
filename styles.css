@@ -1,0 +1,157 @@
+/* styles.css */
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #0066cc, #3399ff);
+  color: #fff;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background: #fff;
+  color: #0066cc;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #e6f0ff;
+}
+
+/* Benefits Section */
+.benefits ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
+
+.benefits h2 {
+  margin-bottom: 1rem;
+}
+
+.benefits li {
+  margin-bottom: 0.8rem;
+}
+
+/* Testimonials */
+.testimonials {
+  background-color: #ffffff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.testimonial {
+  background: #f1f1f1;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  border-radius: 8px;
+  max-width: 700px;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/* FAQs */
+.faq details {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.faq summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Booking Section */
+.booking form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+.booking input,
+.booking button {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.booking button {
+  background-color: #0066cc;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking button:hover {
+  background-color: #0055aa;
+}
+
+/* Footer */
+footer {
+  background: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .testimonial,
+  .benefits ul {
+    padding: 1rem;
+  }
+
+  .booking form {
+    width: 90%;
+  }
+}
